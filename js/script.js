@@ -54,7 +54,7 @@
       const texto = `Hola, me gustaría agendar una cita:%0A%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Servicio:* ${servicio}%0A*Fecha preferida:* ${fecha}%0A*Hora preferida:* ${hora}%0A*Mensaje:* ${mensaje}`;
       
       // Número de WhatsApp CORREGIDO - usando tu número real
-      const whatsappNumber = "5219612136891";
+      const whatsappNumber = "5219612136807";
       
       // Abrir WhatsApp con el mensaje predefinido
       window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${texto}`, '_blank');
