@@ -1,5 +1,4 @@
-
-    // Inicializar animaciones
+ // Inicializar animaciones
     AOS.init({
       duration: 1000,
       once: false,
@@ -25,18 +24,18 @@
     btn.onclick = function(e) {
       e.preventDefault();
       modal.style.display = "flex";
-      document.body.style.overflow = "hidden"; // Prevenir scroll en el fondo
+      document.body.classList.add('no-scroll'); // Prevenir scroll sin causar desplazamiento horizontal
     }
 
     span.onclick = function() {
       modal.style.display = "none";
-      document.body.style.overflow = "auto"; // Restaurar scroll
+      document.body.classList.remove('no-scroll'); // Restaurar scroll
     }
 
     window.onclick = function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
-        document.body.style.overflow = "auto"; // Restaurar scroll
+        document.body.classList.remove('no-scroll'); // Restaurar scroll
       }
     }
 
@@ -54,13 +53,13 @@
       // Formatear el mensaje para WhatsApp
       const texto = `Hola, me gustaría agendar una cita:%0A%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Servicio:* ${servicio}%0A*Fecha preferida:* ${fecha}%0A*Hora preferida:* ${hora}%0A*Mensaje:* ${mensaje}`;
       
-      // Número de WhatsApp (cambiar por tu número real)
-      const whatsappNumber = "5215512345678";
+      // Número de WhatsApp CORREGIDO - usando tu número real
+      const whatsappNumber = "5219612136891";
       
       // Abrir WhatsApp con el mensaje predefinido
       window.open(`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${texto}`, '_blank');
       
       // Cerrar el modal
       modal.style.display = "none";
-      document.body.style.overflow = "auto"; // Restaurar scroll
+      document.body.classList.remove('no-scroll'); // Restaurar scroll
     });
