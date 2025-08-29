@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <!-- Font Awesome para iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -116,33 +116,21 @@
     <div class="testimonios">
       <div class="testimonio" data-aos="flip-left">
         <div class="rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
         <p>“Me encantó mi cambio de look, el ambiente es súper relajante y el personal muy profesional. Definitivamente mi lugar favorito para consentirme.”</p>
         <h4>- Mariana López</h4>
       </div>
       <div class="testimonio" data-aos="flip-up">
         <div class="rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
         <p>“Excelente servicio de manicure, súper detallistas y con higiene impecable. Las uñas me duraron perfectas más de tres semanas.”</p>
         <h4>- Fernanda Torres</h4>
       </div>
       <div class="testimonio" data-aos="flip-right">
         <div class="rating">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
         </div>
         <p>“El facial fue lo mejor que he probado, salí renovada y feliz. Mi piel se ve radiante. ¡Volveré pronto para el tratamiento de cuerpo completo!”</p>
         <h4>- Karla Martínez</h4>
@@ -174,7 +162,7 @@
     <h2 data-aos="fade-up">Cómo Llegar</h2>
     <p style="text-align: center; margin-bottom: 20px;" data-aos="fade-up">Estamos ubicados en el corazón de la ciudad, con fácil acceso y estacionamiento disponible.</p>
     <div class="mapa" data-aos="zoom-in">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0187708533586!2d-99.1676629!3d19.4118599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f92e9e7b0f7f%3A0xc9b2b7e6e40a0c!2sCDMX!5e0!3m2!1ses!2smx!4v1693263628" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
     </div>
   </section>
 
@@ -185,18 +173,10 @@
     <p>Email: contacto@bellezaesencial.com</p>
     
     <div class="redes">
-      <a href="https://facebook.com/tupagina" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://instagram.com/tupagina" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://twitter.com/tupagina" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="https://api.whatsapp.com/send?phone=5215512345678&text=Hola,%20me%20interesa%20agendar%20una%20cita" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
+      <a href="https://facebook.com/tupagina" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/tupagina" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/tupagina" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=5219612136891&text=Hola,%20me%20interesa%20agendar%20una%20cita" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
     
     <div class="copyright">
@@ -205,7 +185,7 @@
   </footer>
 
   <!-- BOTÓN FLOTANTE WHATSAPP -->
-  <a href="https://api.whatsapp.com/send?phone=5215512345678&text=Hola,%20me%20interesa%20agendar%20una%20cita" class="whatsapp-float" target="_blank">
+  <a href="https://api.whatsapp.com/send?phone=5219612136891&text=Hola,%20me%20interesa%20agendar%20una%20cita" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
@@ -214,7 +194,7 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>Reserva tu Cita</h2>
-      <form id="reservaForm">
+      <form id="reservaForm" data-phone="5219612136891">
         <div class="form-group">
           <label for="nombre">Nombre completo</label>
           <input type="text" id="nombre" required>
@@ -233,10 +213,6 @@
             <option value="Extensiones de Pestañas">Extensiones de Pestañas</option>
             <option value="Masaje Relajante">Masaje Relajante</option>
             <option value="Tratamiento Corporal">Tratamiento Corporal</option>
-            <option value="Depilación">Depilación</option>
-            <option value="Maquillaje Profesional">Maquillaje Profesional</option>
-            <option value="Peinado para Eventos">Peinado para Eventos</option>
-            <option value="Tratamiento Anti-age">Tratamiento Anti-age</option>
           </select>
         </div>
         <div class="form-group">
@@ -249,7 +225,7 @@
         </div>
         <div class="form-group">
           <label for="mensaje">Mensaje adicional (opcional)</label>
-          <textarea id="mensaje" placeholder="Indica cualquier preferencia especial, alergias o información que debamos conocer"></textarea>
+          <textarea id="mensaje" placeholder="Indica cualquier preferencia especial"></textarea>
         </div>
         <button type="submit" class="btn">Enviar reserva por WhatsApp</button>
       </form>
